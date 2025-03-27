@@ -169,9 +169,15 @@
         compatible = "zmk,combos";
 
         l3 {
-            bindings = <&lt 3 ESCAPE>;
+            bindings = <&lt 2 ESCAPE>;
             key-positions = <33 34 35>;
-            layers = <0 1 2>;
+            layers = <0 1>;
+        };
+
+        quote {
+            bindings = <&kp SQT>;
+            key-positions = <28 27>;
+            layers = <0 1>;
         };
     };
 
@@ -225,30 +231,20 @@
         base {
             label = "BASE";
             bindings = <
-&kp Q                 &kp W             &kp E               &kp R                 &kp T                  &kp Y    &kp U          &kp I                  &kp O                   &kp P
-&kp A                 &kp S             &kp D               &kp F                 &kp G                  &kp H    &kp J          &kp K                  &kp L                   &kp SEMICOLON
-&hm_l LEFT_CONTROL Z  &hm_l LEFT_ALT X  &kp C               &kp V                 &kp B                  &kp N    &kp M          &kp COMMA              &hm_r RIGHT_ALT PERIOD  &hm_r RIGHT_CONTROL FSLH
-                                        &mt LEFT_SHIFT TAB  &lt_balanced 1 SPACE  &lt_balanced 2 ESCAPE  &kp RET  &kp BACKSPACE  &mt RIGHT_COMMAND SQT
+&kp Q                 &kp W  &kp E                   &kp R                 &kp T      &kp Y          &kp U                &kp I                     &kp O       &kp P
+&kp A                 &kp S  &kp D                   &kp F                 &kp G      &kp H          &kp J                &kp K                     &kp L       &kp SEMICOLON
+&hm_l LEFT_CONTROL Z  &kp X  &kp C                   &kp V                 &kp B      &kp N          &kp M                &kp COMMA                 &kp PERIOD  &hm_r RIGHT_CONTROL FSLH
+                             &mt LEFT_ALT BACKSLASH  &lt_balanced 1 SPACE  &kp ENTER  &kp BACKSPACE  &mt RIGHT_SHIFT TAB  &mt RIGHT_COMMAND ESCAPE
             >;
         };
 
         directions {
             label = "dir";
             bindings = <
-&kp N7        &kp N8        &kp N9        &kp N0            &kp NUMBER_6       &none     &kp PAGE_DOWN   &kp PAGE_UP   &none          &none
-&kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1      &kp N5             &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp BACKSLASH
+&kp N7        &kp N8        &kp N9        &kp N0            &kp NUMBER_6       &none     &kp PAGE_DOWN   &kp PAGE_UP   &none          &kp BACKSPACE
+&kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1      &kp N5             &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
 &kp GRAVE     &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none     &none           &kp GLOBE     &kp RIGHT_ALT  &kp LEFT_CONTROL
                             &trans        &trans            &trans             &trans    &trans          &trans
-            >;
-        };
-
-        shiftNum {
-            label = "snm";
-            bindings = <
-&kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(N0)            &kp LS(NUMBER_6)       &none     &kp PAGE_DOWN   &kp PAGE_UP   &none          &none
-&kp LS(NUMBER_4)  &kp LS(NUMBER_3)  &kp LS(NUMBER_2)  &kp LS(NUMBER_1)      &kp LS(N5)             &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp LS(BACKSLASH)
-&kp LS(GRAVE)     &kp LS(MINUS)     &kp LS(EQUAL)     &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none     &none           &kp GLOBE     &kp RIGHT_ALT  &kp RIGHT_CONTROL
-                                    &trans            &trans                &trans                 &trans    &trans          &trans
             >;
         };
 
@@ -263,12 +259,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        mouse {
-            if-layers = <3 3>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
