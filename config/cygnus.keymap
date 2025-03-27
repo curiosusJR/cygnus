@@ -241,9 +241,9 @@
         directions {
             label = "dir";
             bindings = <
-&kp N7        &kp N8        &kp N9        &kp N0            &kp NUMBER_6       &none     &kp PAGE_DOWN   &kp PAGE_UP   &none          &kp BACKSPACE
-&kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1      &kp N5             &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &none
-&kp GRAVE     &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none     &none           &kp GLOBE     &kp RIGHT_ALT  &kp LEFT_CONTROL
+&kp N7        &kp N8        &kp N9        &kp N0            &kp NUMBER_6       &none     &kp PAGE_DOWN   &kp PAGE_UP   &none      &none
+&kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1      &kp N5             &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp GLOBE
+&kp GRAVE     &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none     &none           &none         &none      &kp LEFT_CONTROL
                             &trans        &trans            &trans             &trans    &trans          &trans
             >;
         };
