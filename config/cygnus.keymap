@@ -174,12 +174,6 @@
             key-positions = <33 34 35>;
             layers = <0>;
         };
-
-        layerMous {
-            bindings = <&mo 4>;
-            key-positions = <11 12 13>;
-            layers = <0>;
-        };
     };
 
     macros {
@@ -266,15 +260,6 @@
 &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_SEL 4    &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
 &none         &none         &bt BT_CLR    &none         &bt BT_CLR_ALL  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15
                             &trans        &trans        &trans          &trans   &trans   &trans
-            >;
-        };
-
-        mouse {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans           &mkp MB5
-&trans  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MCLK
-&trans  &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mkp MB4
-                &trans  &trans  &trans  &mkp LCLK       &mkp RCLK       &trans
             >;
         };
     };
