@@ -242,20 +242,20 @@
         directions {
             label = "dir";
             bindings = <
-&kp N7        &kp N8        &kp N9        &kp N0            &kp NUMBER_6       &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &kp BACKSLASH
-&kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1      &kp N5             &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
-&kp GRAVE     &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F1    &kp F2          &trans        &trans     &trans
-                            &trans        &trans            &trans             &trans    &trans          &trans
+&kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(N0)            &kp LS(NUMBER_6)       &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &kp LS(BACKSLASH)
+&kp LS(NUMBER_4)  &kp LS(NUMBER_3)  &kp LS(NUMBER_2)  &kp LS(NUMBER_1)      &kp LS(N5)             &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp RIGHT_CONTROL
+&kp LS(GRAVE)     &kp LS(MINUS)     &kp LS(EQUAL)     &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp RCMD  &kp F1          &kp F2        &kp F3     &kp F4
+                                    &trans            &trans                &trans                 &trans    &trans          &trans
             >;
         };
 
         shiftnum {
             label = "shiftnum";
             bindings = <
-&kp N7        &kp N8        &kp N9        &kp N0            &kp NUMBER_6       &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &kp BACKSLASH
-&kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1      &kp N5             &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
-&kp GRAVE     &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F1    &kp F2          &trans        &trans     &trans
-                            &trans        &trans            &trans             &trans    &trans          &trans
+&kp N7        &kp N8        &kp N9        &kp N0            &kp NUMBER_6       &msc SCRL_LEFT     &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp BACKSLASH
+&kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1      &kp N5             &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp RIGHT_CONTROL
+&kp GRAVE     &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_COMMAND  &mkp LCLK       &mkp RCLK     &trans           &trans
+                            &trans        &trans            &trans             &trans             &trans          &trans
             >;
         };
 
