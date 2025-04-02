@@ -235,7 +235,7 @@
 &kp Q                 &kp W  &kp E                &kp R                 &kp T               &kp Y         &kp U               &kp I          &kp O       &kp P
 &hm_l LEFT_CONTROL A  &kp S  &kp D                &kp F                 &kp G               &kp H         &kp J               &kp K          &kp L       &hm_r RIGHT_CONTROL SEMICOLON
 &kp Z                 &kp X  &kp C                &kp V                 &hm_l LCMD B        &hm_r RCMD N  &kp M               &kp COMMA      &kp PERIOD  &kp SLASH
-                             &mt LEFT_ALT ESCAPE  &lt_balanced 1 SPACE  &mt LEFT_SHIFT SQT  &kp ENTER     &lt_balanced 2 TAB  &kp BACKSPACE
+                             &mt LEFT_ALT ESCAPE  &lt_balanced 1 SPACE  &mt LEFT_SHIFT TAB  &kp ENTER     &lt_balanced 2 SQT  &kp BACKSPACE
             >;
         };
 
